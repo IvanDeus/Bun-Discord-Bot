@@ -28,7 +28,7 @@ bun install
 ```
 
 ### 2. Configure Environment
-Create a `.env` file in the root directory:
+Create a `.env` file in the directory `nano .env`:
 ```env
 BOT_TOKEN=your_discord_bot_token_here
 ```
