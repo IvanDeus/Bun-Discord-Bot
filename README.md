@@ -54,7 +54,10 @@ Expected output:
 ```
 [DD.MM.YYYY, HH:MM:SS] ✅ Ready! Logged in as YourBot#1234
 ```
-
+Optional: run using pm2:
+```
+pm2 start bun --name "disco" -- run bot.ts
+```
 ## 📝 Message Configuration
 The bot includes built-in fallback messages. To customize them, create `messages.json` in the root directory:
 ```json
