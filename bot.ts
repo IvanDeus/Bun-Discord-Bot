@@ -93,11 +93,9 @@ const client = new Client({
     ],
     partials: [Partials.Channel]
 });
-
-client.once('ready', () => {
+client.once('clientReady', () => {
     console.log(`✅ Ready! Logged in as ${client.user?.tag}`);
 });
-
 // ============= MESSAGE HANDLERS =============
 client.on('messageCreate', async (message: Message) => {
     if (message.author.bot) return;
