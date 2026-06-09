@@ -37,10 +37,11 @@ BOT_TOKEN=your_discord_bot_token_here
 ### 3. Enable Discord Intents
 1. Go to [Discord Developer Portal](https://discord.com/developers/applications)
 2. Select your application → **Bot** tab
-3. Scroll to **Privileged Gateway Intents** and enable:
+3. Click "Reset Token" and copy it into .env file
+4. Scroll to **Privileged Gateway Intents** and enable:
    - ✅ `MESSAGE CONTENT INTENT` **(Required)**
    - ✅ `SERVER MEMBERS INTENT` (recommended)
-4. Go to **OAuth2 → URL Generator**
+5. Go to **OAuth2 → URL Generator**
    - Scopes: `bot`, `applications.commands`
    - Bot Permissions: `Send Messages`, `Read Message History`, `Use External Emojis`
    - Copy the generated URL and invite the bot to your server
