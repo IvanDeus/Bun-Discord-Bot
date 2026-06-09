@@ -37,7 +37,7 @@ BOT_TOKEN=your_discord_bot_token_here
 ### 3. Enable Discord Intents
 1. Go to [Discord Developer Portal](https://discord.com/developers/applications)
 2. Select your application → **Bot** tab
-3. Click "Reset Token" and copy it into .env file
+3. Click **"Reset Token"** and copy it into your **.env** file
 4. Scroll to **Privileged Gateway Intents** and enable:
    - ✅ `MESSAGE CONTENT INTENT` **(Required)**
    - ✅ `SERVER MEMBERS INTENT` (recommended)
