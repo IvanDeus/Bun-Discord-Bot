@@ -2,7 +2,6 @@
 // ============= LOGGING =============
 const originalLog = console.log;
 const originalError = console.error;
-
 console.log = function (message: unknown, ...args: unknown[]) {
     const timestamp = new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' });
     const formattedMessage = `[${timestamp}] ${Bun.inspect(message)}${args.length ? ' ' + args.map(a => Bun.inspect(a)).join(' ') : ''}`;
@@ -17,7 +16,7 @@ console.error = function (message: unknown, ...args: unknown[]) {
 import { Client, GatewayIntentBits, Partials, ActionRowBuilder, ButtonBuilder, ButtonStyle, Message } from "discord.js";
 // ============= ENVIRONMENT VALIDATION =============
 // Bun automatically loads .env files from the working directory.
-const BOT_TOKEN = process.env.BOT_TOKEN;
+const BOT_TOKEN = Bun.env.BOT_TOKEN;
 if (!BOT_TOKEN) {
     console.error("❌ BOT_TOKEN is missing! Create a .env file with: BOT_TOKEN=your_token_here");
     process.exit(1);
