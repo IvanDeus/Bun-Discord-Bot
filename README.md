@@ -22,8 +22,8 @@ A lightweight, interactive Discord bot built with **TypeScript** and **Bun**. Su
 
 ### 1. Clone & Install
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/IvanDeus/Bun-Discord-Bot.git
+cd Bun-Discord-Bot
 bun install
 ```
 
