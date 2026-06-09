@@ -3,3 +3,4 @@ messages.json
 node_modules/
 package-lock.json
 tsconfig.json
+bun.lock
