@@ -54,7 +54,7 @@ Expected output:
 ```
 [DD.MM.YYYY, HH:MM:SS] ✅ Ready! Logged in as YourBot#1234
 ```
-Optional: run using pm2:
+Optional: run using pm2 process manager:
 ```
 pm2 start bun --name "disco" -- run bot.ts
 ```
